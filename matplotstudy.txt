@@ -1,0 +1,17 @@
+
+#fig = plt.Figure(),plt.subplots()
+#plt.Figure():
+fig = plt.figure()作用就是生成一个图框，但是这个图框还不能用来画图，画图需要在子图(subplot)或者轴域(Axes)中作图，用别人的话说，
+fig = plt.figure()就是生成了一个画板，在画板fig上使用ax = fig.add_sudplot(a,b,c)就生成了一个子图ax，
+
+#fig,ax=plt.subplots(a,b)
+就是即生成了画板fig，又生成了一组子图ax，使用ax[x,y]便选中了一个子图
+
+plt.figure()，plt.subplolts(),fig.add_sudplot(),plt.subplots_adjust()函数的参数
+
+plt.Figure(num=None,figsize=None,dpi=None,facecolor=None,edgecolor=None,frameon=True)
+          num:图像编号或名称，数字为编号，字符串为名称
+          figsize:指定figure的宽和高，单位为英寸
+          facecolor:背景颜色
+          edgecolor:边框颜色
+          frameon：是否显示边框
